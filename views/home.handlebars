@@ -1,0 +1,11 @@
+<h1>Rota de Posts: </h1>
+<!--Quando eu recebo vários objetos de uma vez dentro de uma view, eu posso utilizar fazer da seguinte maneira para exibir cada uma.-->
+
+{{#each post}}
+<!--Para cada post, exiba o título dela, e o conteúdo dela-->
+    <small>{{createdAt}}</small>
+    <h3>{{titulo}}</h3>
+    <p>{{conteudo}}</p>
+   <a href="/deletar/{{id}}"> <button>Deletar</button></a>
+    <hr>
+{{/each}}
